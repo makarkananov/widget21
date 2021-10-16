@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Widget page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="logo.png" alt="" class="logo">
+    </div>
+    <div class="main">
+      <div class="general-block">
+        <p class="clock">{{clock}}</p>
+        <p class="date">{{date}}</p>
+        <link type="text/css" rel="stylesheet" href="https://www.meteoprog.ua/css/winformer.min.css?id=100">
+        <div class="meteoprog-informer weather" style="width: 260px" data-params='{"city_ids":"22372","domain":"https://www.meteoprog.ua","id":"613cfb1e2bac9285048b4705","lang":"ru"}'> 
+            <a title="Погода в городе Ковров" target="_blank" href="https://www.meteoprog.ua/weather/Kovrov">
+              <img style="margin: 0 auto; display: block" src="https://www.meteoprog.ua/images/preloader.gif" alt="Loading...">
+            </a>
+            <a target="_blank" class="constructor__met2wlink" href="https://www.meteoprog.ua/review/Kovrov/">Погода на 2 недели</a>
+
+          <a class="constructor__metlink" target="_blank" href="https://www.meteoprog.ua">
+            <img style="display: block; margin: 0 auto;" alt="Meteoprog" src="https://www.meteoprog.ua/images/meteoprog-inf.png">
+          </a>
+      </div>   
+      <div class="relative-block right">
+        <p class="lesson">{{lesson_info}} <b>{{lesson}}</b></p>
+      </div> 
+      <div class="relative-block left">
+        <p class="lesson">Статус: <b class="blue">{{status}}</b></p>
+      </div> 
+    </div>
+
+    <div class="phrase-container">
+      <div class="hover-phrase-effect"></div>
+      <div class="phrase"></div>
+      <div class="author"></div>
+  </div>
+  </div>
+  <div class='marquee' style='overflow:hidden'>каникулы через {{holiday}} каникулы через {{holiday}} каникулы через {{holiday}} каникулы через {{holiday}} каникулы через {{holiday}} каникулы через {{holiday}} каникулы через {{holiday}} каникулы через {{holiday}}</div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+  <script type="text/javascript" src="https://www.meteoprog.ua/js/winformer.min.js?id=100"></script> 
+  <script src="moments.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
