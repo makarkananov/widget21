@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 99.9vh;
+  background-image: url(../background.png);
+}
+
+.header {
+  width: 100%;
+  height: 13vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 30% 30%;
+}
+
+.header .logo {
+  height: 6vw;
+}
+
+.main {
+  height: 87vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .general-block {
+  height: 35vh;
+  width: 35vw;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40vh;
+}
+
+.main .general-block .clock {
+  font-family: "Open Sans", sans-serif;
+  color: #03aef7e1;
+  font-size: 4.5vw;
+  line-height: 0.8;
+}
+
+.main .general-block .date {
+  font-family: "Open Sans", sans-serif;
+  color: #03aef7e1;
+  font-size: 2vw;
+  line-height: 0.8;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  border-top: 10px solid #f2f4f8;
+  border-bottom: 10px solid #f2f4f8;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+
+.marquee {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-family: "Open Sans", sans-serif;
+  color: #03aef7e1;
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.weather {
+  position: absolute;
+  top: 45vh;
+  border-radius: 30px;
+}
+
+.phrase-container {
+  position: absolute;
+  top: 60vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: auto;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  padding-bottom: 1vw;
+}
+
+.phrase-container .author {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5vw;
+  color: #acacac;
+  margin-top: 2vh;
+}
+
+.phrase-container .phrase {
+  padding-top: 2vh;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.9vw;
+  width: 85%;
+  padding-bottom: 2vh;
+  border-bottom: 5px solid #03aef7e1;
+}
+
+.relative-block {
+  position: absolute;
+  top: 32.5vh;
+  height: 11vh;
+  width: 25vw;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40vh;
+}
+
+.relative-block .lesson {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6vw;
+  line-height: 1.3;
+  width: 90%;
+}
+
+.relative-block .lesson b {
+  color: #03aef7e1;
+}
+
+.left {
+  left: 4vw;
+}
+
+.right {
+  right: 4vw;
+}
